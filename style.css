@@ -1,0 +1,46 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        flex-basis: 20%;
+
+
+    }
+.one{
+    background-color:black;
+    color: gold;
+    padding: 5px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+}
+.box{
+    background-color: #eaf1f1;
+    padding: 10px;
+}
+.board{
+    padding: 20px;
+}
+.side{
+    padding: 20px;
+}
+
+.km{
+    color: rgb(64, 142, 231);
+}
+.km:hover{
+    color: blue;
+}
+
+
+@media  screen and (max-with:480px) {
+    body{
+        flex-basis: 40%;
+    }
+    
+}
+@media screen and (max-with:480px) {
+    .end{
+        flex-basis: 40%;
+    }
+    
+}
