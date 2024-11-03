@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(96, 198, 238);
+    color: rgb(11, 11, 11);
+}
+.jj {
+    color: yellowgreen;
+}
+.jj:hover {
+    color: blue;
+    cursor: pointer;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}

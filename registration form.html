@@ -1,78 +1,84 @@
 <!DOCTYPE html>
+
 <head>
+   
     <title>Register Form</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="javascript" href="reg.js">
     <link rel="icon" href="img/registration form.jpg">
 </head>
-<body bgcolor="sky blue" style="color: rgb(11, 11, 11);">
+<body>
     <center>
         <h1>Upcoming Events📅</h1>
-        <h3>Don't Miss any important event.Here are the impartant event you have registered it!</h3>
-        <h4> Free Entry|Free Food|Participants certificate</h4>
+        <h3>Don't Miss any important event. Here are the important events you have registered for!</h3>
+        <h4>Free Entry | Free Food | Participants Certificate</h4>
         <hr>
-    
-    <form>
-        <h1>Register Form</h1>
-<table>
-<tr>
-    <td>Name</td> <td><input type="text" placeholder="Enter Your Name"></td>
-</tr>
-<tr>
-    <td>Register Num</td> <td><input type="number" placeholder="University Reg Num"></td>
-</tr>
-<tr>
-    <td>Department</td> <td>
-        <select>
-        <option>EEE</option>
-        <option>ECE</option>
-        <option>CIVIL</option>
-        <option>CSC</option>
-        <option>MEC</option>
-    </td>
-    </select>
-</tr>
-<tr>
-    <td>Gender</td> <td>
-        <input type="radio" name="Gender">Male
-        <input type="radio" name="Gender">Female
-    </td>
-</tr>
-<tr>
-<td>Mobile Number</td> <td><input type="number" placeholder="Enter What'sapp Number"></td>
 
+        <form onsubmit="save(event)">
+            <h1>Register Form</h1>
+            <table border="1">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" placeholder="Enter Your Name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td>Register Num</td> 
+                    <td><input type="number" placeholder="University Reg Num" id="reg" required></td>
+                </tr>
+                <tr>
+                    <td>Department</td> 
+                    <td>
+                        <select id="course" required>
+                            <option value="">Select your department</option>
+                            <option>EEE</option>
+                            <option>ECE</option>
+                            <option>CIVIL</option>
+                            <option>CSC</option>
+                            <option>MEC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td> 
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required> Male
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="number" placeholder="Enter WhatsApp Number" id="num" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="ex: ragul@gmail.com" id="email" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"><button type="submit">SAVE</button></td>
+                </tr>
+            </table>
+            <table border="1" id="list">
+                <tr>
+                    <td>NAME</td>
+                    <td>REGISTER NUMBER</td>
+                    <td>DEPARTMENT</td>
+                    <td>GENDER</td>
+                    <td>MOBILE NUMBER</td>
+                    <td>EMAIL</td>
+                    <td>ACTION</td>
+                </tr>
+            </table>
 
-
-</tr>
-<tr>
-    <td>Email</td><td><input type="email" placeholder="ex:ragul@gmail.com"></td>
-</tr>
-<tr>
-    <td></td>
-    <td><input type="submit">  <input type="reset"></td>
-</tr>
-</table>
-
-<hr> 
-<h1>Contact details</h1>
-<h2>Mount Zion College Of Engineering And Technology</h2>
-<h3>Lena Vilakku, Pilivalam P.O, Thirumayam Tk. Pudukkottai Dt - 622507</h3>
-<a class="jj" href="index.html">Home</a>|<a class="jj" href="https://www.instagram.com/mountzioncet/">Instagram</a>|<a class="jj" href="https://www.facebook.com/MountZionCET/">Facebook</a>|<a class="jj" href="mailto:info@mzcet.in">Email.link</a>
-
-
-
-
-    </form>
-</center>
+            <hr> 
+            <h1>Contact Details</h1>
+            <h2>Mount Zion College Of Engineering And Technology</h2>
+            <h3>Lena Vilakku, Pilivalam P.O, Thirumayam Tk. Pudukkottai Dt - 622507</h3>
+            <a class="jj" href="index.html">Home</a> |
+            <a class="jj" href="https://www.instagram.com/mountzioncet/">Instagram</a> |
+            <a class="jj" href="https://www.facebook.com/MountZionCET/">Facebook</a> |
+            <a class="jj" href="mailto:info@mzcet.in">Email</a>
+        </form>
+    </center>
 </body>
 </html>
-
-
-<style>
-    .jj{
-        color:yellowgreen;
-    }
-    .jj:hover{
-        color: blue;
-        cursor: pointer;
-    }
-    
-</style>
